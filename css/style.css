@@ -43,4 +43,25 @@ body {
   text-align: left;
   height: 0;
 }
+
+/*Logo span styles */
+.p {
+  color: #00a8ff;
+}
+
+.i {
+  color: #fbc531;
+}
+
+.x {
+  color: #4cd137;
+}
+
+.e {
+  color: #8c7ae6;
+}
+
+.l {
+  color: #e84118;
+}
 /*# sourceMappingURL=style.css.map */
