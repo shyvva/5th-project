@@ -336,3 +336,18 @@ body {
   color: #d34836;
   transition: 0.5s all;
 }
+
+/*Media*/
+
+@media (min-width: 767) and (max-width: 991px){
+  .circle{
+    display: none;
+  }
+  .page-subtitle-two,
+  .page-subtitle-three,
+  .page-subtitle-four
+  .page-subtitle-five  {
+    display: none;
+  }
+  
+}
