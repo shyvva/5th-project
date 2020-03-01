@@ -2,6 +2,9 @@
 $font-main: "Spartan";
 $content-text: "Simonetta";
 $page-title: "Lacquer";
+$logo: 'Pacifico', ;
+
+$btn-color: #8c7ae6;
 
 $transition: all 1.5s;
 
@@ -21,8 +24,8 @@ body {
 }
 
 .section {
-  padding: 108px;
-  margin: 0 auto;
+  padding: 96px 0;
+  margin: 96px auto;
 }
 
 /*Navigation*/
@@ -37,6 +40,7 @@ body {
   list-style-type: none;
   text-align: right;
   color: white;
+  margin-right: 180px;
 }
 
 .navigation li {
@@ -57,9 +61,11 @@ body {
 }
 
 .logo {
-  font-family: $font-main;
+  font-family: $logo;
   text-align: left;
   height: 0;
+  color: $btn-color;
+  margin-left: 180px;
 }
 
 /*Splash*/
@@ -157,7 +163,7 @@ body {
 }
 
 .btn-white {
-  background-color: #487eb0;
+  background-color: $btn-color;
   color: white;
 }
 
@@ -207,3 +213,47 @@ body {
   opacity: 1;
   transition: 2s all;
 }
+
+/*Services*/
+
+.section-title {
+  font-size: 30px;
+  font-family: $font-main;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  font-family: $content-text;
+  color: gray;
+  font-style: italic;
+  text-align: center;
+}
+
+.services-icon{
+  font-size: 36px;
+  text-align: center;
+  border: solid 4px;
+  border-width: 10px;
+  padding: 10px;
+  border-radius: 75%;
+  border-color: $btn-color;
+  &:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    border-color: black;
+    color: $btn-color;
+    transition: $transition;
+  }
+}
+.services-content {
+  text-align: center;
+}
+
+.inside-section-title {
+  font-size: 24px;
+  font-family: $font-main;
+  font-style: italic;
+}
+
+/*Gallery*/
