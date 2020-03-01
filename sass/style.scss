@@ -2,9 +2,10 @@
 $font-main: "Spartan";
 $content-text: "Simonetta";
 $page-title: "Lacquer";
-$logo: 'Pacifico', ;
+$logo: "Pacifico";
 
 $btn-color: #8c7ae6;
+$section-bg: #ecf0f1;
 
 $transition: all 1.5s;
 
@@ -24,8 +25,7 @@ body {
 }
 
 .section {
-  padding: 96px 0;
-  margin: 96px auto;
+  padding: 96px;
 }
 
 /*Navigation*/
@@ -76,7 +76,7 @@ body {
   height: 1000px;
   background-size: cover;
   background-position: center;
-  &:hover .splash-inner{
+  &:hover .splash-inner {
     opacity: 1;
     transition: $transition;
   }
@@ -88,7 +88,6 @@ body {
   text-align: center;
   padding-top: 100px;
   opacity: 0;
- 
 }
 
 .circle {
@@ -228,9 +227,10 @@ body {
   color: gray;
   font-style: italic;
   text-align: center;
+  opacity: 0.9;
 }
 
-.services-icon{
+.services-icon {
   font-size: 36px;
   text-align: center;
   border: solid 4px;
@@ -238,7 +238,7 @@ body {
   padding: 10px;
   border-radius: 75%;
   border-color: $btn-color;
-  &:hover{
+  &:hover {
     transform: scale(1.2);
     cursor: pointer;
     border-color: black;
@@ -254,6 +254,50 @@ body {
   font-size: 24px;
   font-family: $font-main;
   font-style: italic;
+  text-align: center;
 }
 
 /*Gallery*/
+
+.gallery {
+  background-color: $section-bg;
+  .section-subtitle {
+    color: black;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    padding: 3px 3px 0 3px;
+    margin: 8px 8px 0 8px;
+  }
+}
+
+.gallery-description {
+  background-color: white;
+  margin-left: 11px;
+  margin-right: -5px;
+  margin-top: -8px;
+  opacity: 0;
+  h4 {
+    font-size: 14px;
+    margin: 0;
+    padding: 6px 0 0;
+  }
+  p {
+    margin-top: -5px;
+    color: black;
+  }
+}
+
+.gallery-content:hover{
+  cursor: pointer;
+  opacity: 0.7;
+  transition: $transition;
+}
+
+.gallery-content:hover .gallery-description{
+  opacity: 1;
+  cursor: pointer;
+  transition: $transition;
+}
