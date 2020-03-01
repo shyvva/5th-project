@@ -290,14 +290,49 @@ body {
   }
 }
 
-.gallery-content:hover{
+.gallery-content:hover {
   cursor: pointer;
   opacity: 0.7;
   transition: $transition;
 }
 
-.gallery-content:hover .gallery-description{
+.gallery-content:hover .gallery-description {
   opacity: 1;
   cursor: pointer;
   transition: $transition;
+}
+
+/*Footer*/
+
+.footer {
+  height: 50px;
+  text-align: center;
+}
+
+.footer-icon {
+  font-size: 34px;
+  margin: 10px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+  transition: 0.5s all;
+}
+
+.fa-pinterest:hover {
+  color: #c8232c;
+  transition: 0.5s all;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  transition: 0.5s all;
+}
+
+.fa-google-plus-square:hover {
+  color: #d34836;
+  transition: 0.5s all;
 }

@@ -299,4 +299,39 @@ body {
   cursor: pointer;
   transition: all 1.5s;
 }
+
+/*Footer*/
+.footer {
+  height: 50px;
+  text-align: center;
+}
+
+.footer-icon {
+  font-size: 34px;
+  margin: 10px;
+}
+
+.footer-icon:hover {
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+  transition: 0.5s all;
+}
+
+.fa-pinterest:hover {
+  color: #c8232c;
+  transition: 0.5s all;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2;
+  transition: 0.5s all;
+}
+
+.fa-google-plus-square:hover {
+  color: #d34836;
+  transition: 0.5s all;
+}
 /*# sourceMappingURL=style.css.map */
